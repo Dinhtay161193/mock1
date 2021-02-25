@@ -1,0 +1,32 @@
+.register {
+  background: url(../../../assets/pattern.jpg);
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #e00d7a;
+        margin-left: 5px;
+        &:hover {
+          color: #f2b819;
+        }
+      }
+    }
+  }
+  &__left {
+    display: flex;
+  }
+  &__phone {
+    float: right;
+  }
+}

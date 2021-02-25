@@ -1,0 +1,35 @@
+<header class="header">
+    <div class="header__logo">
+        <img src="../../../assets/logo.png" alt="" />
+    </div>
+
+    <div class="header__navigation">
+        <div class="header__navigation__search">
+            <div class="header__navigation__search--item">
+                <input placeholder="Tìm Kiếm ..." />
+                <i class="fa fa-search"></i>
+                <span *ngIf="users; else chuaDangNhap">{{ users.taiKhoan }}</span>
+                <ng-template #chuaDangNhap>
+                    <span>Xin Chào</span>
+                </ng-template>
+            </div>
+        </div>
+        <div class="header__navigation__link">
+            <div class="header__navigation__link--home">
+                <img src="../../../assets/icon-home.png" alt="" />
+            </div>
+            <div class="header__navigation__link--item">
+                <ul>
+                    <li><a href="#">Phim</a></li>
+                    <li><a href="#">Lịch Chiếu</a></li>
+                    <li><a href="#">Rạp Và Giá</a></li>
+                    <li><a href="#">Khuyến Mãi</a></li>
+                    <li><a href="#">Hỏi Và Đáp</a></li>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

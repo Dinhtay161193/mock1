@@ -1,0 +1,55 @@
+<div class="example-container signin">
+    <div class="signin__form">
+        <h3 class="signin__form__title">Đăng Nhập</h3>
+        <form #DangNhap="ngForm" (ngSubmit)="dangNhap(DangNhap.value)">
+            <div class="signin__form__matKhau">
+                <mat-form-field appearance="fill">
+                    <mat-label>Tài Khoản</mat-label>
+                    <input matInput type="text" class="example-left-align" ngModel name="taiKhoan" required
+                        #taiKhoan="ngModel">
+                    <mat-icon matSuffix> <i class="fa fa-user"></i></mat-icon>
+                    <div *ngIf="taiKhoan.errors && (taiKhoan.touched ||
+                        taiKhoan.dirty)">
+                        <div style="color: red;font-size: 10px;" *ngIf="taiKhoan.errors.required">
+
+                            không được bỏ trống
+                        </div>
+
+                    </div>
+                </mat-form-field>
+            </div>
+            <div class="signin__form__taiKhoan">
+                <mat-form-field appearance="fill">
+                    <mat-label>Mật Khẩu</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" ngModel name="matKhau" #matKhau='ngModel'
+                        required>
+
+                    <button mat-icon-button matSuffix (click)="hide= !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <div *ngIf="matKhau.errors && (matKhau.touched ||
+                        matKhau.dirty)">
+                        <div style="color: red;font-size: 10px;" *ngIf="matKhau.errors.required">
+                            không được bỏ trống
+                        </div>
+
+                    </div>
+                </mat-form-field>
+
+            </div>
+            <button class="dangNhap" type="submit">ĐĂNG NHẬP</button>
+        </form>
+        <div class="signin__form__footer">
+            <div class="signup__form__footer-left">
+                <a routerLink="/">Trang Chủ</a>
+            </div>
+            <div class="signup__form__footer-right">
+                <a routerLink="/admin/signup">Bạn chưa có tài khoản ? Đăng Ký</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

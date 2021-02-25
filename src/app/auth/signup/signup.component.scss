@@ -1,0 +1,71 @@
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.signup {
+  background: url(../../../assets/hinh-nen-hd-19-1.jpg);
+  background-position: center;
+  height: 594px;
+  padding: 80px 20%;
+  text-align: center;
+  &__form {
+    width: 100%;
+    height: 100%;
+    mat-label {
+      color: white;
+    }
+    h3 {
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    .dangNhap {
+      width: 270px;
+      height: 30px;
+      border-radius: 15px;
+      border: none;
+      font-weight: 600;
+      color: blue;
+      background: #f2b819;
+
+      box-shadow: 0 9px gray;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background: yellow;
+      }
+    }
+    .dangNhap:active {
+      transform: translate(0, 4px);
+      -webkit-transform: translate(0, 4px);
+      box-shadow: 0 4px gray;
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 18px 25%;
+      a {
+        text-decoration: none;
+        color: blue;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}

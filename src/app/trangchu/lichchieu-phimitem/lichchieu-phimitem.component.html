@@ -1,0 +1,19 @@
+<div class="items">
+    <div class="items__img">
+        <img [src]="ItemFilm.hinhAnh" alt="">
+        <p>{{ItemFilm.tenPhim | shortcut :20}}</p>
+        <img class="d2" src="../../../assets/icon-2d.jpg" alt="">
+        <div class="items__img__overload">
+            <p>{{ItemFilm.moTa | shortcut : 50 }}</p>
+            <div class="chiTiet">...</div>
+            <button class="btn btn-warning">Chi Tiết</button>
+            <div class="muaVe">
+                <button class="muaVe__xem" mat-button (click)="openDialog(ItemFilm.trailer)">Xem TraiLer
+                </button>
+                <br>
+                <button class="muaVe__mua">Mua Vé </button>
+            </div>
+        </div>
+    </div>
+
+</div>

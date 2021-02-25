@@ -1,0 +1,5 @@
+<swiper [pagination]="{ clickable: true }" [autoplay]="true">
+    <ng-template swiperSlide *ngFor="let product of listSlide">
+        <img class="items" [src]="product.images" alt="">
+    </ng-template>
+</swiper>

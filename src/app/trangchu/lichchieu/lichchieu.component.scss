@@ -1,0 +1,40 @@
+.slider {
+  background: #f18720;
+  box-sizing: border-box;
+  &__button {
+    text-align: center;
+    background: url(../../../assets/header.jpg);
+    height: 100px;
+
+    .btn {
+      width: 170px;
+      border-radius: 30px 50px 50px 0;
+      height: 50px;
+      background: #f18720;
+      border: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      margin-top: 25px;
+      outline: none;
+    }
+    .btn1 {
+      outline: none;
+      width: 170px;
+      border-radius: 50px 30px 0px 50px;
+      height: 50px;
+      background: #f2b819;
+      border: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      margin-top: 25px;
+    }
+  }
+  &__film {
+    padding: 10px 5%;
+    margin: 0px -18px;
+  }
+}

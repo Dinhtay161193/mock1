@@ -1,0 +1,16 @@
+<div class="slider">
+    <div class="slider__button">
+        <button class="btn" (click)="dangChieu()">Đang Chiếu</button>
+        <button class="btn1" (click)="sapChieu()">Sắp Chiếu</button>
+    </div>
+    <div class="slider__film">
+        <div *ngIf="status; else SapChieu" class="slider__film__dangChieu">
+            <app-lichchieu-phimdangchieu></app-lichchieu-phimdangchieu>
+        </div>
+        <ng-template #SapChieu>
+            <div class="slider__film__sapChieu">
+                <app-lichchieu-phimsapchieu></app-lichchieu-phimsapchieu>
+            </div>
+        </ng-template>
+    </div>
+</div>

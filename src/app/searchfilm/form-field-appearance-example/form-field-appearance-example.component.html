@@ -1,0 +1,34 @@
+<div class="film__select__up">
+  <mat-form-field style="margin-right: 10px;" appearance="fill">
+    <mat-label>CHỌN PHIM</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>CHỌN RẠP</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="film__select__dow">
+  <mat-form-field style="margin-right: 10px;" appearance="fill">
+    <mat-label>CHỌN NGÀY</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let state of states" [value]="state">
+        {{state}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>CHỌN SUẤT CHIẾU</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
